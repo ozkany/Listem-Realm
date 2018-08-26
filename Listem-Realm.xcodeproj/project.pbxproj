@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D792D27A2132FB6900FC5F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D2792132FB6900FC5F3A /* AppDelegate.swift */; };
+		D792D27C2132FB6900FC5F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D27B2132FB6900FC5F3A /* ViewController.swift */; };
+		D792D27F2132FB6900FC5F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792D27D2132FB6900FC5F3A /* Main.storyboard */; };
+		D792D2822132FB6900FC5F3A /* Listem_Realm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */; };
+		D792D2842132FB6A00FC5F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D792D2832132FB6A00FC5F3A /* Assets.xcassets */; };
+		D792D2872132FB6A00FC5F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D792D2762132FB6900FC5F3A /* Listem-Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Listem-Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D792D2792132FB6900FC5F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D792D27B2132FB6900FC5F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D792D27E2132FB6900FC5F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listem_Realm.xcdatamodel; sourceTree = "<group>"; };
+		D792D2832132FB6A00FC5F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D792D2862132FB6A00FC5F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D792D2882132FB6A00FC5F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D792D2732132FB6900FC5F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D792D26D2132FB6900FC5F3A = {
+			isa = PBXGroup;
+			children = (
+				D792D2782132FB6900FC5F3A /* Listem-Realm */,
+				D792D2772132FB6900FC5F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D792D2772132FB6900FC5F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D792D2762132FB6900FC5F3A /* Listem-Realm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D792D2782132FB6900FC5F3A /* Listem-Realm */ = {
+			isa = PBXGroup;
+			children = (
+				D792D2792132FB6900FC5F3A /* AppDelegate.swift */,
+				D792D27B2132FB6900FC5F3A /* ViewController.swift */,
+				D792D27D2132FB6900FC5F3A /* Main.storyboard */,
+				D792D2832132FB6A00FC5F3A /* Assets.xcassets */,
+				D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */,
+				D792D2882132FB6A00FC5F3A /* Info.plist */,
+				D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */,
+			);
+			path = "Listem-Realm";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D792D2752132FB6900FC5F3A /* Listem-Realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D792D28B2132FB6A00FC5F3A /* Build configuration list for PBXNativeTarget "Listem-Realm" */;
+			buildPhases = (
+				D792D2722132FB6900FC5F3A /* Sources */,
+				D792D2732132FB6900FC5F3A /* Frameworks */,
+				D792D2742132FB6900FC5F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Listem-Realm";
+			productName = "Listem-Realm";
+			productReference = D792D2762132FB6900FC5F3A /* Listem-Realm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D792D26E2132FB6900FC5F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ozkan Yilmaz";
+				TargetAttributes = {
+					D792D2752132FB6900FC5F3A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D792D2712132FB6900FC5F3A /* Build configuration list for PBXProject "Listem-Realm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D792D26D2132FB6900FC5F3A;
+			productRefGroup = D792D2772132FB6900FC5F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D792D2752132FB6900FC5F3A /* Listem-Realm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D792D2742132FB6900FC5F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792D2872132FB6A00FC5F3A /* LaunchScreen.storyboard in Resources */,
+				D792D2842132FB6A00FC5F3A /* Assets.xcassets in Resources */,
+				D792D27F2132FB6900FC5F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D792D2722132FB6900FC5F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D792D27C2132FB6900FC5F3A /* ViewController.swift in Sources */,
+				D792D27A2132FB6900FC5F3A /* AppDelegate.swift in Sources */,
+				D792D2822132FB6900FC5F3A /* Listem_Realm.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D792D27D2132FB6900FC5F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D792D27E2132FB6900FC5F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D792D2862132FB6A00FC5F3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D792D2892132FB6A00FC5F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D792D28A2132FB6A00FC5F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D792D28C2132FB6A00FC5F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWCB3DV7J3;
+				INFOPLIST_FILE = "Listem-Realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ozkanapps.Listem-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D792D28D2132FB6A00FC5F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FWCB3DV7J3;
+				INFOPLIST_FILE = "Listem-Realm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ozkanapps.Listem-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D792D2712132FB6900FC5F3A /* Build configuration list for PBXProject "Listem-Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792D2892132FB6A00FC5F3A /* Debug */,
+				D792D28A2132FB6A00FC5F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D792D28B2132FB6A00FC5F3A /* Build configuration list for PBXNativeTarget "Listem-Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D792D28C2132FB6A00FC5F3A /* Debug */,
+				D792D28D2132FB6A00FC5F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */,
+			);
+			currentVersion = D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */;
+			path = Listem_Realm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D792D26E2132FB6900FC5F3A /* Project object */;
+}
