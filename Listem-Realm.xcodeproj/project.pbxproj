@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D792D27A2132FB6900FC5F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D2792132FB6900FC5F3A /* AppDelegate.swift */; };
-		D792D27C2132FB6900FC5F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D27B2132FB6900FC5F3A /* ViewController.swift */; };
+		D792D27C2132FB6900FC5F3A /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D27B2132FB6900FC5F3A /* TodoListViewController.swift */; };
 		D792D27F2132FB6900FC5F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792D27D2132FB6900FC5F3A /* Main.storyboard */; };
-		D792D2822132FB6900FC5F3A /* Listem_Realm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */; };
+		D792D2822132FB6900FC5F3A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D792D2802132FB6900FC5F3A /* DataModel.xcdatamodeld */; };
 		D792D2842132FB6A00FC5F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D792D2832132FB6A00FC5F3A /* Assets.xcassets */; };
 		D792D2872132FB6A00FC5F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */; };
+		D792D2932132FCFF00FC5F3A /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D2922132FCFF00FC5F3A /* CategoryListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D792D2762132FB6900FC5F3A /* Listem-Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Listem-Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D792D2792132FB6900FC5F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D792D27B2132FB6900FC5F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D792D27B2132FB6900FC5F3A /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		D792D27E2132FB6900FC5F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listem_Realm.xcdatamodel; sourceTree = "<group>"; };
 		D792D2832132FB6A00FC5F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D792D2862132FB6A00FC5F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D792D2882132FB6A00FC5F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D792D2922132FCFF00FC5F3A /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				D792D2792132FB6900FC5F3A /* AppDelegate.swift */,
-				D792D27B2132FB6900FC5F3A /* ViewController.swift */,
-				D792D27D2132FB6900FC5F3A /* Main.storyboard */,
-				D792D2832132FB6A00FC5F3A /* Assets.xcassets */,
-				D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */,
+				D792D28E2132FC9E00FC5F3A /* Controllers */,
+				D792D28F2132FCAA00FC5F3A /* Views */,
+				D792D2902132FCBD00FC5F3A /* Supporting Files */,
 				D792D2882132FB6A00FC5F3A /* Info.plist */,
-				D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */,
+				D792D2912132FCCA00FC5F3A /* Data Model */,
 			);
 			path = "Listem-Realm";
+			sourceTree = "<group>";
+		};
+		D792D28E2132FC9E00FC5F3A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D792D2922132FCFF00FC5F3A /* CategoryListViewController.swift */,
+				D792D27B2132FB6900FC5F3A /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D792D28F2132FCAA00FC5F3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D792D27D2132FB6900FC5F3A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D792D2902132FCBD00FC5F3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D792D2832132FB6A00FC5F3A /* Assets.xcassets */,
+				D792D2852132FB6A00FC5F3A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D792D2912132FCCA00FC5F3A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D792D2802132FB6900FC5F3A /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D792D27C2132FB6900FC5F3A /* ViewController.swift in Sources */,
+				D792D2932132FCFF00FC5F3A /* CategoryListViewController.swift in Sources */,
+				D792D27C2132FB6900FC5F3A /* TodoListViewController.swift in Sources */,
 				D792D27A2132FB6900FC5F3A /* AppDelegate.swift in Sources */,
-				D792D2822132FB6900FC5F3A /* Listem_Realm.xcdatamodeld in Sources */,
+				D792D2822132FB6900FC5F3A /* DataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FWCB3DV7J3;
+				DEVELOPMENT_TEAM = RXJRG92K5A;
 				INFOPLIST_FILE = "Listem-Realm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FWCB3DV7J3;
+				DEVELOPMENT_TEAM = RXJRG92K5A;
 				INFOPLIST_FILE = "Listem-Realm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -340,13 +376,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D792D2802132FB6900FC5F3A /* Listem_Realm.xcdatamodeld */ = {
+		D792D2802132FB6900FC5F3A /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */,
 			);
 			currentVersion = D792D2812132FB6900FC5F3A /* Listem_Realm.xcdatamodel */;
-			path = Listem_Realm.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
