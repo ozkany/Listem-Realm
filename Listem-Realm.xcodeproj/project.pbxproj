@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8220DD9DBD971D3BB67968B4 /* Pods_Listem_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F0C6B405810E2DDA1E26B6 /* Pods_Listem_Realm.framework */; };
 		D792D27A2132FB6900FC5F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D2792132FB6900FC5F3A /* AppDelegate.swift */; };
 		D792D27C2132FB6900FC5F3A /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D792D27B2132FB6900FC5F3A /* TodoListViewController.swift */; };
 		D792D27F2132FB6900FC5F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D792D27D2132FB6900FC5F3A /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68AC6143959A497E4005211C /* Pods-Listem-Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listem-Realm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Listem-Realm/Pods-Listem-Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		84F0C6B405810E2DDA1E26B6 /* Pods_Listem_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Listem_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8F07E96A3242A505AF3A2DC /* Pods-Listem-Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Listem-Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-Listem-Realm/Pods-Listem-Realm.release.xcconfig"; sourceTree = "<group>"; };
 		D792D2762132FB6900FC5F3A /* Listem-Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Listem-Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D792D2792132FB6900FC5F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D792D27B2132FB6900FC5F3A /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8220DD9DBD971D3BB67968B4 /* Pods_Listem_Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4394A6A848895469F861DC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68AC6143959A497E4005211C /* Pods-Listem-Realm.debug.xcconfig */,
+				B8F07E96A3242A505AF3A2DC /* Pods-Listem-Realm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6578E77EFC441EB4ED7673D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F0C6B405810E2DDA1E26B6 /* Pods_Listem_Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D792D26D2132FB6900FC5F3A = {
 			isa = PBXGroup;
 			children = (
 				D792D2782132FB6900FC5F3A /* Listem-Realm */,
 				D792D2772132FB6900FC5F3A /* Products */,
+				4394A6A848895469F861DC4B /* Pods */,
+				6578E77EFC441EB4ED7673D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D792D28B2132FB6A00FC5F3A /* Build configuration list for PBXNativeTarget "Listem-Realm" */;
 			buildPhases = (
+				DF3FCA513F9B987189CC9D66 /* [CP] Check Pods Manifest.lock */,
 				D792D2722132FB6900FC5F3A /* Sources */,
 				D792D2732132FB6900FC5F3A /* Frameworks */,
 				D792D2742132FB6900FC5F3A /* Resources */,
+				783742DD455D7EFAA763F6DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		783742DD455D7EFAA763F6DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Listem-Realm/Pods-Listem-Realm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Listem-Realm/Pods-Listem-Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF3FCA513F9B987189CC9D66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Listem-Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D792D2722132FB6900FC5F3A /* Sources */ = {
@@ -318,6 +393,7 @@
 		};
 		D792D28C2132FB6A00FC5F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AC6143959A497E4005211C /* Pods-Listem-Realm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +412,7 @@
 		};
 		D792D28D2132FB6A00FC5F3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8F07E96A3242A505AF3A2DC /* Pods-Listem-Realm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
