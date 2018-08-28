@@ -1,9 +1,9 @@
 import UIKit
 import RealmSwift
 
-class CategoryViewController: UITableViewController {
-    let realm = try! Realm()
+class CategoryViewController: SwipeTableViewController {
     
+    let realm = try! Realm()
     var categories: Results<Category>?
     
     override func viewDidLoad() {
@@ -18,14 +18,15 @@ class CategoryViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         cell.textLabel?.text = categories?[indexPath.row].name ?? "Kategori Ekleyin"
         
         return cell
     }
     
-    //MARK: - Data Manipulation Methods
+    //MARK: >> Data Manipulation Methods
     
     //MARK: - Add new categories
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
@@ -69,10 +70,22 @@ class CategoryViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func updateModel(at indexPath: IndexPath) {
+        
+        if let category = self.categories?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(category)
+                }
+            } catch {
+                print("Error deleting category: \(error)")
+            }
+        }
+    }
+    
     
     //MARK: - TableView Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         
         performSegue(withIdentifier: "goToItems", sender: self)
     }
@@ -84,10 +97,8 @@ class CategoryViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 destinationVC.selectedCategory = categories?[indexPath.row]
             }
-            
         }
-        
-        
     }
     
 }
+
